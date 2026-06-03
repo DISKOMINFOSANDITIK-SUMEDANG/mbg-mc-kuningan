@@ -1,0 +1,61 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist
+build
+.next
+out
+
+# Environment files (keep .env, exclude overrides)
+.env.*
+.env.local
+.env.*.local
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+*.pem
+
+# Docker
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Tests & Coverage
+coverage
+.nyc_output
+*.lcov
+
+# Logs
+*.log
+logs
+
+# Temporary files
+tmp
+temp
+.cache
+
+# CI/CD
+.github
+.gitlab-ci.yml
+.travis.yml
+
+# Misc
+README.md
+LICENSE
+.editorconfig

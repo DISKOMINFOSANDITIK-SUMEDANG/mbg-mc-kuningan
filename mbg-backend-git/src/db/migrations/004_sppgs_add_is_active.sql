@@ -1,0 +1,4 @@
+ALTER TABLE sppgs
+  ADD COLUMN IF NOT EXISTS is_active BOOLEAN NOT NULL DEFAULT TRUE;
+
+CREATE INDEX IF NOT EXISTS idx_sppgs_is_active ON sppgs(is_active);

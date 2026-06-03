@@ -1,0 +1,55 @@
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+pnpm-lock.yaml
+
+# Next.js build output & cache
+.next
+out
+.turbo
+.vercel
+
+# Build artifacts
+dist
+build
+
+# Environment
+.env
+.env.*
+.env.local
+.env.*.local
+
+# Development
+.vscode
+.idea
+*.swp
+*.swo
+*.iml
+.DS_Store
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Testing
+coverage
+.nyc_output
+*.lcov
+__tests__
+
+# Logs
+*.log
+logs
+
+# Temporary
+tmp
+temp
+.cache
+
+# Misc
+README.md
+LICENSE
+.editorconfig
+vercel.json

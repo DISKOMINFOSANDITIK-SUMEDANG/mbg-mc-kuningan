@@ -1,0 +1,17 @@
+# Legacy local copies
+mbg-backend/
+mbg-frontend/
+
+# macOS
+.DS_Store
+
+# Local environment
+.env.local
+.env.*.local
+
+# Runtime data
+object-storage/
+ssl/*.pem
+ssl/*.key
+
+MBG-Docker.zip

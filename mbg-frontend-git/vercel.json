@@ -1,0 +1,12 @@
+{
+  "crons": [
+    {
+      "path": "/api/cms/stock-movements/auto-expire",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/cms/supplier-products/auto-expire",
+      "schedule": "0 3 * * *"
+    }
+  ]
+}

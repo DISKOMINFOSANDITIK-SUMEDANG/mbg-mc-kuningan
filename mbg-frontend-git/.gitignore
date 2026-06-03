@@ -1,0 +1,115 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+import_schools.js
+.vscode/settings.json
+
+# Test files
+test_output.xlsx
+test_excel_export.js
+
+# Supabase exports
+supabase_export_*.sql
+supabase_s3_export/
+
+# Nested node_modules
+docs/node_modules/
+
+# Logs
+*.log
+nohup.out
+logs/
+
+# Data / import scripts (local use only)
+*.csv
+*.sql
+!database/migrations/*.sql
+valid_*.json
+import_summary.json
+android_api_test_report.json
+login_test_report.json
+.batch_checkpoint.json
+mcp_execution_batches.txt
+verify_output.txt
+verify_v2_output.txt
+last-build.log
+
+# One-off scripts
+import_via_mcp.js
+prepare_batch_import.js
+prepare_school_import.js
+prepare_sppg_import_mcp.js
+list_all_batches.js
+normalize_school_names.js
+update_sppg_users.js
+upload_to_s3.py
+verify_password_hashes.js
+quick_import.sh
+import_to_production.sh
+migration_test.sh
+test_first_page_load.sh
+test_token_refresh.sh
+test_updated_accounts.js
+app.js
+proxy.ts
+
+# Report / internal docs (not part of app)
+LAPORAN_*.md
+API.md
+FORCE_CLEAR_COOKIES.md
+IMPORT_SUMMARY.txt
+MBG_RAPEL_REPORT_FIX.md
+MIGRATION_VALIDATION_REPORT.md
+OFFTAKER_IMPLEMENTATION.md
+OPTIMIZATION_REPORT.md
+PANDUAN_EXPORT_EXCEL.md
+PAYMENT_BANK_DETAILS.md
+PRODUCT_REQUEST_AUTO_REDIRECT.md
+QUICK_REFERENCE.md
+RAPEL_FILTER_FIX.md
+TEST_OFFTAKER_LOGIN.md
+TRANSACTION_FORMAT_UPDATE_VERIFICATION.md
+TRANSACTION_NUMBER_FORMAT_CHANGE.md
+panduan_import_data_sekolah_sppg.md
+
+# VS Code workspace file
+mbg.code-workspace
