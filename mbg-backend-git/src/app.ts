@@ -123,6 +123,7 @@ app.use('/api/bahan-baku', bahanBakuRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/statistics', statisticsRoutes);
 app.use('/api/reports', reportsRoutes);
+app.use('/api', uploadRoutes);
 app.use('/api/upload', uploadRoutes);
 app.use('/api/sppg-products', sppgProductsRoutes);
 app.use('/api/offtaker', offtakerRoutes);

@@ -5,6 +5,7 @@ import * as uploadController from '../controllers/upload.controller';
 
 const router = Router();
 
+router.post('/', withAuth, memoryUpload.single('file'), uploadController.uploadFile);
 router.post('/upload', withAuth, memoryUpload.single('file'), uploadController.uploadFile);
 router.get('/files', withAuth, uploadController.listFiles);
 router.delete('/files', withAuth, uploadController.deleteFile);
