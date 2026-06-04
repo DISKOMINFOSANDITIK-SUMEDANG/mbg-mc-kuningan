@@ -160,7 +160,7 @@ export default function HeroSection() {
             Temukan menu bergizi yang disajikan setiap hari
           </p>
           <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto px-4">
-            di sekolah-sekolah pelaksana Program MBG Kabupaten Sumedang
+            di sekolah-sekolah pelaksana Program MBG Kabupaten Kuningan
           </p>
         </div>
 

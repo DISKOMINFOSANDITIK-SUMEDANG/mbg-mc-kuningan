@@ -1652,7 +1652,7 @@ function SPPGSearchContent() {
               ? 'Pantau jumlah laporan distribusi harian tiap SPPG per bulan untuk mengidentifikasi SPPG dengan aktivitas terendah'
               : searchQuery 
               ? 'Hasil pencarian dapur SPPG berdasarkan kata kunci yang Anda masukkan'
-              : 'Temukan dapur SPPG yang melayani sekolah-sekolah di Kabupaten Sumedang'
+              : 'Temukan dapur SPPG yang melayani sekolah-sekolah di Kabupaten Kuningan'
             }
           </p>
         </div>

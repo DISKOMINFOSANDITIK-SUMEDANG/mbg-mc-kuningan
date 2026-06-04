@@ -1,6 +1,6 @@
 # CMS - Makan Bergizi Gratis
 
-Content Management System untuk program Makan Bergizi Gratis di Kabupaten Sumedang.
+Content Management System untuk program Makan Bergizi Gratis di Kabupaten Kuningan.
 
 ## 🏗️ Struktur Folder
 
@@ -126,7 +126,7 @@ SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 ### 3. Test Accounts
 ```
 Administrator:
-Email: admin@sumedangkab.go.id
+Email: admin@kuningankab.go.id
 Password: password123
 
 Sekolah:

@@ -197,7 +197,7 @@ export default function BelumMelaksanakanPage() {
               Data sekolah yang masih dalam proses untuk melaksanakan
             </p>
             <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto">
-              Program Makan Bergizi Gratis di Kabupaten Sumedang
+              Program Makan Bergizi Gratis di Kabupaten Kuningan
             </p>
           </div>
         </div>
@@ -219,7 +219,7 @@ export default function BelumMelaksanakanPage() {
               Pencapaian dalam Angka
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Sekolah yang masih dalam tahap persiapan Program MBG di Kabupaten Sumedang
+              Sekolah yang masih dalam tahap persiapan Program MBG di Kabupaten Kuningan
             </p>
           </div>
 
@@ -523,7 +523,7 @@ export default function BelumMelaksanakanPage() {
                       name: school.sekolah,
                       latitude: school.latitude,
                       longitude: school.longitude,
-                      address: `${school.kecamatan}, Sumedang`,
+                      address: `${school.kecamatan}, Kuningan`,
                       phone: "",
                       type: "school",
                     }))}
@@ -547,7 +547,7 @@ export default function BelumMelaksanakanPage() {
                       {school.pendidikan} • {school.sasaranSiswa} siswa
                     </p>
                     <p className="text-sm text-gray-500 mb-3">
-                      {school.kecamatan}, Sumedang
+                      {school.kecamatan}, Kuningan
                     </p>
                     <div className="flex justify-between items-center">
                       <span className="inline-flex px-3 py-1 text-xs font-semibold rounded-full bg-orange-100 text-orange-800">

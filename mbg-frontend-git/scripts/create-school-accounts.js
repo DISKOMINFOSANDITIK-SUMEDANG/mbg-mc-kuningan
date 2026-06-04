@@ -23,7 +23,7 @@ function generateEmail(schoolName) {
     .replace(/[^a-z0-9]/g, '')  // Remove special characters
     .substring(0, 20);  // Limit to 20 chars
   
-  return `${cleanName}@sumedangkab.go.id`;
+  return `${cleanName}@kuningankab.go.id`;
 }
 
 // Function to generate random password

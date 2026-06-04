@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "Makan Bergizi Gratis - Program Nasional di Kabupaten Sumedang";
+export const alt = "Makan Bergizi Gratis - Program Nasional di Kabupaten Kuningan";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -25,8 +25,8 @@ export default async function TwitterImage() {
         {/* Logo */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://mbg.sumedangkab.go.id/images/logo-sumedang.png"
-          alt="Logo Kabupaten Sumedang"
+          src="https://mbg.kuningankab.go.id/images/logo-kuningan.png"
+          alt="Logo Kabupaten Kuningan"
           style={{
             width: "220px",
             height: "220px",
@@ -52,7 +52,7 @@ export default async function TwitterImage() {
               textTransform: "uppercase",
             }}
           >
-            Kabupaten Sumedang
+            Kabupaten Kuningan
           </div>
           <div
             style={{
@@ -74,7 +74,7 @@ export default async function TwitterImage() {
               maxWidth: "560px",
             }}
           >
-            Program prioritas nasional untuk memastikan anak-anak mendapat nutrisi berkualitas di Kabupaten Sumedang.
+            Program prioritas nasional untuk memastikan anak-anak mendapat nutrisi berkualitas di Kabupaten Kuningan.
           </div>
           <div
             style={{
@@ -84,7 +84,7 @@ export default async function TwitterImage() {
               marginTop: "8px",
             }}
           >
-            mbg.sumedangkab.go.id
+            mbg.kuningankab.go.id
           </div>
         </div>
       </div>

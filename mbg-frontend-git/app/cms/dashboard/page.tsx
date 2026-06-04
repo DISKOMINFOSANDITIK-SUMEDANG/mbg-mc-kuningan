@@ -148,7 +148,7 @@ export default function DashboardPage() {
             Selamat datang di CMS Makan Bergizi Gratis
           </h1>
           <p className="text-blue-100">
-            Kelola program makan bergizi gratis di Kabupaten Sumedang dengan mudah dan efisien.
+            Kelola program makan bergizi gratis di Kabupaten Kuningan dengan mudah dan efisien.
           </p>
         </div>
 

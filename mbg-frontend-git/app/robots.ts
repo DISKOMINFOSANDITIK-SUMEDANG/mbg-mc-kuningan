@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const siteUrl = "https://mbg.sumedangkab.go.id";
+  const siteUrl = "https://mbg.kuningankab.go.id";
 
   return {
     rules: [

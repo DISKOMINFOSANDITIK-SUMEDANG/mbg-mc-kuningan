@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import sharp from 'sharp';
 
-const ALLOWED_HOSTS = ['s3.sumedangkab.go.id'];
+const ALLOWED_HOSTS = ['s3.kuningankab.go.id'];
 
 export async function GET(req: NextRequest) {
   const url = req.nextUrl.searchParams.get('url');

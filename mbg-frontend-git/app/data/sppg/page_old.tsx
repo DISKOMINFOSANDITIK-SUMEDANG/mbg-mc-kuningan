@@ -241,7 +241,7 @@ export default function SPPGPage() {
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Pusat produksi dan distribusi makanan bergizi untuk sekolah di
-              Kabupaten Sumedang
+              Kabupaten Kuningan
             </p>
           </div>
         </div>
@@ -255,7 +255,7 @@ export default function SPPGPage() {
               SPPG dalam Angka
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Pencapaian Sentra Pangan Pendidikan Gizi di Kabupaten Sumedang
+              Pencapaian Sentra Pangan Pendidikan Gizi di Kabupaten Kuningan
             </p>
           </div>
 

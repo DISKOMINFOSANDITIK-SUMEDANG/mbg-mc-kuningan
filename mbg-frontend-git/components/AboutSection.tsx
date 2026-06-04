@@ -64,7 +64,7 @@ export default function AboutSection() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors">Sasaran</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                Semua siswa di sekolah-sekolah terpilih di Kabupaten Sumedang 
+                Semua siswa di sekolah-sekolah terpilih di Kabupaten Kuningan 
                 dengan prioritas daerah yang membutuhkan.
               </p>
             </div>
@@ -150,7 +150,7 @@ export default function AboutSection() {
                     <h4 className="font-bold text-xl text-gray-900 mb-2 group-hover:text-yellow-600 transition-colors">Target 2025</h4>
                     <p className="text-sm font-semibold text-yellow-600 mb-3">Sepanjang Tahun</p>
                     <p className="text-sm text-gray-700 leading-relaxed">
-                      Ekspansi ke lebih banyak sekolah di seluruh Kabupaten Sumedang
+                      Ekspansi ke lebih banyak sekolah di seluruh Kabupaten Kuningan
                     </p>
                   </div>
                 </div>

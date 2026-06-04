@@ -45,7 +45,7 @@ export default function HeroSection({ onSchoolSelect }: HeroSectionProps) {
         <div className="text-center mb-16 animate-fade-in">
           <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
             <span className="w-2 h-2 bg-blue-600 rounded-full mr-2 animate-pulse"></span>
-            Program Prioritas Nasional - Kabupaten Sumedang
+            Program Prioritas Nasional - Kabupaten Kuningan
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
             Makan Bergizi
@@ -56,7 +56,7 @@ export default function HeroSection({ onSchoolSelect }: HeroSectionProps) {
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
             Program Pemerintah Indonesia untuk generasi sehat dan cerdas
             <span className="block text-lg text-gray-500 mt-2">
-              Implementasi di Kabupaten Sumedang - Jawa Barat
+              Implementasi di Kabupaten Kuningan - Jawa Barat
             </span>
           </p>
         </div>

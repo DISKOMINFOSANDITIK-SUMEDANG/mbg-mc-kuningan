@@ -60,7 +60,7 @@ const configuredOrigins = config.cors.origin
   .filter(Boolean);
 
 const allowedOrigins = [
-  'https://mbg.sumedangkab.go.id',
+  'https://mbg.kuningankab.go.id',
   ...configuredOrigins,
   ...(config.nodeEnv !== 'production' ? ['http://localhost:3000', 'http://localhost:3001', 'http://10.0.2.2:3001'] : []),
 ];

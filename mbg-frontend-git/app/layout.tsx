@@ -21,34 +21,34 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mbg.sumedangkab.go.id'),
+  metadataBase: new URL('https://mbg.kuningankab.go.id'),
   title: {
-    default: "Makan Bergizi Gratis - Program Nasional di Kabupaten Sumedang",
-    template: "%s | MBG Sumedang"
+    default: "Makan Bergizi Gratis - Program Nasional di Kabupaten Kuningan",
+    template: "%s | MBG Kuningan"
   },
-  applicationName: "MBG Sumedang",
-  description: "Program Makan Bergizi Gratis (MBG) - Program prioritas nasional Pemerintah Indonesia untuk memastikan anak-anak mendapat nutrisi berkualitas. Pantau distribusi makanan bergizi gratis real-time dari SPPG dan sekolah di Kabupaten Sumedang.",
+  applicationName: "MBG Kuningan",
+  description: "Program Makan Bergizi Gratis (MBG) - Program prioritas nasional Pemerintah Indonesia untuk memastikan anak-anak mendapat nutrisi berkualitas. Pantau distribusi makanan bergizi gratis real-time dari SPPG dan sekolah di Kabupaten Kuningan.",
   keywords: [
     "makan bergizi gratis",
     "mbg indonesia",
     "program prabowo gibran",
-    "mbg sumedang",
+    "mbg kuningan",
     "nutrisi anak sekolah",
-    "sekolah sumedang",
-    "SPPG sumedang",
+    "sekolah kuningan",
+    "SPPG kuningan",
     "dapur satelit modular",
     "program gizi nasional",
     "makanan sekolah gratis",
     "kesehatan anak indonesia",
     "badan gizi nasional",
-    "mbg.sumedangkab.go.id"
+    "mbg.kuningankab.go.id"
   ],
   authors: [
     { name: "Badan Gizi Nasional", url: "https://gizi.go.id" },
-    { name: "Pemkab Sumedang", url: "https://sumedangkab.go.id" }
+    { name: "Pemkab Kuningan", url: "https://kuningankab.go.id" }
   ],
   creator: "Badan Gizi Nasional - Pemerintah Indonesia",
-  publisher: "Pemerintah Kabupaten Sumedang",
+  publisher: "Pemerintah Kabupaten Kuningan",
   robots: {
     index: true,
     follow: true,
@@ -61,31 +61,31 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/images/logo-sumedang.png",
-    shortcut: "/images/logo-sumedang.png",
-    apple: "/images/logo-sumedang.png",
+    icon: "/images/logo-kuningan.png",
+    shortcut: "/images/logo-kuningan.png",
+    apple: "/images/logo-kuningan.png",
   },
   manifest: "/manifest.webmanifest",
   openGraph: {
-    title: "Makan Bergizi Gratis - Program Nasional di Kabupaten Sumedang",
-    description: "Program Makan Bergizi Gratis (MBG) - Program prioritas nasional Pemerintah Indonesia untuk memastikan anak-anak mendapat nutrisi berkualitas. Pantau distribusi makanan bergizi gratis real-time dari SPPG dan sekolah di Kabupaten Sumedang.",
-    url: "https://mbg.sumedangkab.go.id",
-    siteName: "MBG Sumedang",
+    title: "Makan Bergizi Gratis - Program Nasional di Kabupaten Kuningan",
+    description: "Program Makan Bergizi Gratis (MBG) - Program prioritas nasional Pemerintah Indonesia untuk memastikan anak-anak mendapat nutrisi berkualitas. Pantau distribusi makanan bergizi gratis real-time dari SPPG dan sekolah di Kabupaten Kuningan.",
+    url: "https://mbg.kuningankab.go.id",
+    siteName: "MBG Kuningan",
     type: "website",
     locale: "id_ID",
     images: [
       {
-        url: "/images/logo-sumedang.png",
+        url: "/images/logo-kuningan.png",
         width: 1200,
         height: 630,
-        alt: "Logo Kabupaten Sumedang - Program Makan Bergizi Gratis",
+        alt: "Logo Kabupaten Kuningan - Program Makan Bergizi Gratis",
         type: "image/png",
       },
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Banner Makan Bergizi Gratis - MBG Sumedang",
+        alt: "Banner Makan Bergizi Gratis - MBG Kuningan",
         type: "image/png",
       },
     ],
@@ -93,8 +93,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Makan Bergizi Gratis - Program Nasional di Kabupaten Sumedang",
-    description: "Program Makan Bergizi Gratis (MBG) - Program prioritas nasional Pemerintah Indonesia. Pantau distribusi real-time dari SPPG dan sekolah di Kabupaten Sumedang.",
+    title: "Makan Bergizi Gratis - Program Nasional di Kabupaten Kuningan",
+    description: "Program Makan Bergizi Gratis (MBG) - Program prioritas nasional Pemerintah Indonesia. Pantau distribusi real-time dari SPPG dan sekolah di Kabupaten Kuningan.",
     images: ["/opengraph-image"],
     creator: "@setkabgoid",
     site: "@setkabgoid",
@@ -102,7 +102,7 @@ export const metadata: Metadata = {
   category: "government",
   other: {
     "geo.region": "ID-JB",
-    "geo.placename": "Kabupaten Sumedang",
+    "geo.placename": "Kabupaten Kuningan",
     "geo.position": "-6.83;107.92",
     "ICBM": "-6.83, 107.92",
   },
@@ -111,17 +111,17 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "GovernmentOrganization",
-  "name": "Program Makan Bergizi Gratis Kabupaten Sumedang",
-  "url": "https://mbg.sumedangkab.go.id",
-  "logo": "https://mbg.sumedangkab.go.id/images/logo-sumedang.png",
-  "description": "Program Makan Bergizi Gratis (MBG) - Program prioritas nasional Pemerintah Indonesia untuk memastikan anak-anak mendapat nutrisi berkualitas di Kabupaten Sumedang.",
+  "name": "Program Makan Bergizi Gratis Kabupaten Kuningan",
+  "url": "https://mbg.kuningankab.go.id",
+  "logo": "https://mbg.kuningankab.go.id/images/logo-kuningan.png",
+  "description": "Program Makan Bergizi Gratis (MBG) - Program prioritas nasional Pemerintah Indonesia untuk memastikan anak-anak mendapat nutrisi berkualitas di Kabupaten Kuningan.",
   "areaServed": {
     "@type": "AdministrativeArea",
-    "name": "Kabupaten Sumedang",
+    "name": "Kabupaten Kuningan",
     "addressCountry": "ID"
   },
   "sameAs": [
-    "https://www.sumedangkab.go.id"
+    "https://www.kuningankab.go.id"
   ]
 };
 

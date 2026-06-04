@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import { IconShieldCheck, IconLock, IconUsers, IconFileText } from '@tabler/icons-react';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Makan Bergizi Gratis Sumedang',
-  description: 'Privacy Policy for MBG Sumedang website and mobile app, including location data disclosure for Google Play compliance.',
+  title: 'Privacy Policy | Makan Bergizi Gratis Kuningan',
+  description: 'Privacy Policy for MBG Kuningan website and mobile app, including location data disclosure for Google Play compliance.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
                 </div>
 
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  This section applies specifically to the <strong className="text-gray-900">Monitoring MBG Sumedang Android application</strong>. It explains exactly which data is accessed in the mobile app and why, including location data disclosures required by Google Play.
+                  This section applies specifically to the <strong className="text-gray-900">Monitoring MBG Kuningan Android application</strong>. It explains exactly which data is accessed in the mobile app and why, including location data disclosures required by Google Play.
                 </p>
 
                 <div className="space-y-4 mb-6">
@@ -174,7 +174,7 @@ export default function PrivacyPolicyPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span><strong className="text-gray-900">Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to MBG Sumedang.</span>
+                    <span><strong className="text-gray-900">Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to MBG Kuningan.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -194,7 +194,7 @@ export default function PrivacyPolicyPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span><strong className="text-gray-900">Service</strong> refers to the Website and the Monitoring MBG Sumedang mobile application.</span>
+                    <span><strong className="text-gray-900">Service</strong> refers to the Website and the Monitoring MBG Kuningan mobile application.</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -206,7 +206,7 @@ export default function PrivacyPolicyPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span><strong className="text-gray-900">Website</strong> refers to MBG Sumedang, accessible from <a href="https://mbg.sumedangkab.go.id" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">https://mbg.sumedangkab.go.id</a></span>
+                    <span><strong className="text-gray-900">Website</strong> refers to MBG Kuningan, accessible from <a href="https://mbg.kuningankab.go.id" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">https://mbg.kuningankab.go.id</a></span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -521,7 +521,7 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl">
                   <p className="text-gray-700">
-                    By visiting this page on our website: <a href="https://mbg.sumedangkab.go.id/contact" className="text-blue-600 hover:text-blue-800 underline font-medium" target="_blank" rel="noopener noreferrer">https://mbg.sumedangkab.go.id/contact</a>
+                    By visiting this page on our website: <a href="https://mbg.kuningankab.go.id/contact" className="text-blue-600 hover:text-blue-800 underline font-medium" target="_blank" rel="noopener noreferrer">https://mbg.kuningankab.go.id/contact</a>
                   </p>
                 </div>
               </div>

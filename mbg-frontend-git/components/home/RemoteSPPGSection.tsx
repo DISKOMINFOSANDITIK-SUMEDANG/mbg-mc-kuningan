@@ -43,7 +43,7 @@ export default function RemoteSPPGSection() {
             SPPG Terpencil
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed px-4">
-            Program khusus untuk wilayah terpencil di Kabupaten Sumedang yang memerlukan perhatian lebih dalam pembangunan infrastruktur SPPG
+            Program khusus untuk wilayah terpencil di Kabupaten Kuningan yang memerlukan perhatian lebih dalam pembangunan infrastruktur SPPG
           </p>
         </div>
 

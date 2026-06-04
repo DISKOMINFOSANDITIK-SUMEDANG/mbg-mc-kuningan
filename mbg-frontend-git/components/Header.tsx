@@ -114,8 +114,8 @@ export default function Header() {
           <div className="flex items-center space-x-3">
             <div className="flex-shrink-0">
               <img
-                src="/images/logo-sumedang.png"
-                alt="Logo Kabupaten Sumedang"
+                src="/images/logo-kuningan.png"
+                alt="Logo Kabupaten Kuningan"
                 className="h-12 w-auto"
               />
             </div>
@@ -123,7 +123,7 @@ export default function Header() {
               <h1 className="text-xl font-bold text-gray-900">
                 Makan Bergizi Gratis
               </h1>
-              <p className="text-xs text-gray-600">Kabupaten Sumedang</p>
+              <p className="text-xs text-gray-600">Kabupaten Kuningan</p>
             </div>
           </div>
 

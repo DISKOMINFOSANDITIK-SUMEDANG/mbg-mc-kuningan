@@ -194,7 +194,7 @@ export default function PeredaranUangPage() {
               </span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-4 max-w-3xl mx-auto leading-relaxed font-medium">
-              Kabupaten Sumedang
+              Kabupaten Kuningan
             </p>
             <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto">
               Periode Januari - November 2025
@@ -219,7 +219,7 @@ export default function PeredaranUangPage() {
               Ringkasan Peredaran Uang
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Analisis keuangan Program Makan Bergizi Gratis di Kabupaten Sumedang
+              Analisis keuangan Program Makan Bergizi Gratis di Kabupaten Kuningan
             </p>
           </div>
 

@@ -1,12 +1,12 @@
-# MBG Kabupaten Sumedang
+# MBG Kabupaten Kuningan
 
-Aplikasi **Makan Bergizi Gratis (MBG) Kabupaten Sumedang** adalah sistem informasi untuk membantu pengelolaan program makan bergizi gratis, mulai dari data sekolah, SPPG, kelompok penerima, pemasok, bahan baku, menu, distribusi, sampai pelaporan.
+Aplikasi **Makan Bergizi Gratis (MBG) Kabupaten Kuningan** adalah sistem informasi untuk membantu pengelolaan program makan bergizi gratis, mulai dari data sekolah, SPPG, kelompok penerima, pemasok, bahan baku, menu, distribusi, sampai pelaporan.
 
 Aplikasi ini terdiri dari halaman publik untuk informasi program dan CMS untuk pengelolaan data oleh admin/operator.
 
 ## Tujuan Aplikasi
 
-- Menyediakan informasi program MBG Kabupaten Sumedang secara mudah diakses.
+- Menyediakan informasi program MBG Kabupaten Kuningan secara mudah diakses.
 - Mengelola data sekolah, SPPG, kelompok, dan penerima manfaat.
 - Mengelola data pemasok, komoditas, bahan baku, dan stok.
 - Membantu pencatatan menu, distribusi, dan laporan kegiatan.

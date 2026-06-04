@@ -35,7 +35,7 @@ export default function SupplierEditPage() {
     address: '',
     village: '',
     district: '',
-    regency: 'Kabupaten Sumedang',
+    regency: 'Kabupaten Kuningan',
     province: 'Jawa Barat',
     phone: '',
     email: '',
@@ -75,7 +75,7 @@ export default function SupplierEditPage() {
         address: data.address || '',
         village: data.village || '',
         district: data.district || '',
-        regency: data.regency || 'Kabupaten Sumedang',
+        regency: data.regency || 'Kabupaten Kuningan',
         province: data.province || 'Jawa Barat',
         phone: data.phone || '',
         email: data.email || '',
@@ -254,7 +254,7 @@ export default function SupplierEditPage() {
                     type="text"
                     value={form.district}
                     onChange={(e) => setForm({ ...form, district: e.target.value })}
-                    placeholder="Contoh: Sumedang Selatan"
+                    placeholder="Contoh: Kuningan Selatan"
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     required
                   />
@@ -269,7 +269,7 @@ export default function SupplierEditPage() {
                     type="text"
                     value={form.regency}
                     onChange={(e) => setForm({ ...form, regency: e.target.value })}
-                    placeholder="Contoh: Kabupaten Sumedang"
+                    placeholder="Contoh: Kabupaten Kuningan"
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   />
                 </div>

@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
       // S3 storage
       {
         protocol: 'https',
-        hostname: 's3.sumedangkab.go.id',
+        hostname: 's3.kuningankab.go.id',
         port: '',
         pathname: '/**',
       },

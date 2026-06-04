@@ -93,7 +93,7 @@ export default function ReligiousEducationSection() {
             Pendidikan Keagamaan
           </h2>
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed px-4">
-            Kabupaten Sumedang memiliki {grandTotal.toLocaleString()} institusi pendidikan keagamaan yang tersebar di seluruh wilayah
+            Kabupaten Kuningan memiliki {grandTotal.toLocaleString()} institusi pendidikan keagamaan yang tersebar di seluruh wilayah
           </p>
         </div>
 
@@ -235,7 +235,7 @@ export default function ReligiousEducationSection() {
                   </div>
                   <div>
                     <div className="text-xs sm:text-sm font-semibold text-gray-900">Total {activeCategory === 'formal' ? 'Madrasah Formal' : 'Pendidikan Non-Formal'}</div>
-                    <div className="text-xs text-gray-500">Kabupaten Sumedang</div>
+                    <div className="text-xs text-gray-500">Kabupaten Kuningan</div>
                   </div>
                 </div>
                 <div className="text-left sm:text-right w-full sm:w-auto">
@@ -253,7 +253,7 @@ export default function ReligiousEducationSection() {
         <div className="text-center">
           <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-white rounded-full shadow-md border border-gray-200">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-xs sm:text-sm font-medium text-gray-700">Data Pendidikan Keagamaan Kabupaten Sumedang</span>
+            <span className="text-xs sm:text-sm font-medium text-gray-700">Data Pendidikan Keagamaan Kabupaten Kuningan</span>
           </div>
         </div>
       </div>

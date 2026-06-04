@@ -1,6 +1,6 @@
-# 🍽️ MBG Sumedang - Makan Bergizi Gratis
+# 🍽️ MBG Kuningan - Makan Bergizi Gratis
 
-Aplikasi web modern untuk program "Makan Bergizi Gratis" di Kabupaten Sumedang, Jawa Barat. Aplikasi ini memungkinkan pencarian sekolah, detail SPPG (dapur), menu harian, laporan distribusi, dan sistem manajemen konten (CMS) untuk administrator.
+Aplikasi web modern untuk program "Makan Bergizi Gratis" di Kabupaten Kuningan, Jawa Barat. Aplikasi ini memungkinkan pencarian sekolah, detail SPPG (dapur), menu harian, laporan distribusi, dan sistem manajemen konten (CMS) untuk administrator.
 
 ## ✨ Fitur Utama
 
@@ -150,7 +150,7 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 API_URL=http://localhost:3001
 
 # S3 Storage
-NEXT_PUBLIC_STORAGE_BASE_URL=https://s3.sumedangkab.go.id
+NEXT_PUBLIC_STORAGE_BASE_URL=https://s3.kuningankab.go.id
 NEXT_PUBLIC_STORAGE_BUCKET=supabase-mbg
 NEXT_PUBLIC_STORAGE_BUCKET_PREFIX=stub/mbg_bucket
 
@@ -346,7 +346,7 @@ Gunakan [Conventional Commits](https://www.conventionalcommits.org/):
 
 ## 📄 Lisensi
 
-Proprietary software untuk Kabupaten Sumedang.
+Proprietary software untuk Kabupaten Kuningan.
 
 ## 🙏 Acknowledgments
 
@@ -355,18 +355,18 @@ Proprietary software untuk Kabupaten Sumedang.
 - **Next.js Team** untuk framework yang powerful
 - **Tailwind CSS** untuk utility-first CSS
 - **Vercel** untuk hosting platform
-- **Kabupaten Sumedang** untuk dukungan program MBG
+- **Kabupaten Kuningan** untuk dukungan program MBG
 
 ## 👥 Tim Pengembang
 
-Dikembangkan oleh **Dinas Komunikasi, Informatika, Statistik dan Persandian Kabupaten Sumedang**
+Dikembangkan oleh **Dinas Komunikasi, Informatika, Statistik dan Persandian Kabupaten Kuningan**
 
 ## 📞 Support
 
 Untuk pertanyaan dan dukungan:
-- Email: diskominfosandi@sumedangkab.go.id
-- Website: https://sumedangkab.go.id
+- Email: diskominfosandi@kuningankab.go.id
+- Website: https://kuningankab.go.id
 
 ---
 
-**Made with ❤️ for Kabupaten Sumedang**
+**Made with ❤️ for Kabupaten Kuningan**

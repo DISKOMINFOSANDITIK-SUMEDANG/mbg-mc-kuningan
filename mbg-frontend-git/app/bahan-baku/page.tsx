@@ -246,7 +246,7 @@ export default function BahanBakuPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Daftar ketersediaan bahan baku pangan dari Kelompok Tani (KT) di Kabupaten Sumedang 
+              Daftar ketersediaan bahan baku pangan dari Kelompok Tani (KT) di Kabupaten Kuningan 
               untuk mendukung Program Makan Bergizi Gratis
             </p>
           </div>

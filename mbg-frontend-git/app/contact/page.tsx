@@ -283,10 +283,10 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">Alamat Kantor</h3>
                   <p className="text-gray-600">
-                    SEKRETARIAT DAERAH SUMEDANG<br />
-                    Kabupaten Sumedang<br />
-                    Situ, Kec. Sumedang Utara<br />
-                    Kabupaten Sumedang, Jawa Barat 45621
+                    Dinas Komunikasi dan Informatika, Jl. Aruji Kartawinata No.15, Kec. Kuningan, Kabupaten Kuningan, Jawa Barat 45511<br />
+                    Kabupaten Kuningan<br />
+                    Situ, Kec. Kuningan Utara<br />
+                    Kabupaten Kuningan, Jawa Barat 45621
                   </p>
                 </div>
               </div>
@@ -308,7 +308,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">Email</h3>
-                  <p className="text-gray-600">makanbergizi@sumedangkab.go.id</p>
+                  <p className="text-gray-600">makanbergizi@kuningankab.go.id</p>
                   <p className="text-sm text-gray-500">Respon dalam 24 jam</p>
                 </div>
               </div>
@@ -672,7 +672,7 @@ export default function ContactPage() {
                   <div className="text-center">
                     <IconMapPin className="h-12 w-12 text-gray-400 mx-auto mb-2" />
                     <p className="text-gray-500">Peta Lokasi Kantor</p>
-                    <p className="text-sm text-gray-400">Jl. Angkrek No.103, Situ, Kec. Sumedang Utara</p>
+                    <p className="text-sm text-gray-400">Jl. Angkrek No.103, Situ, Kec. Kuningan Utara</p>
                   </div>
                 </div>
                 {/* LAPOR Section */}
@@ -716,7 +716,7 @@ export default function ContactPage() {
               </h3>
               <p className="text-gray-600">
                 Sekolah dapat mendaftar melalui formulir online atau menghubungi 
-                Dinas Pendidikan Kabupaten Sumedang. Tim kami akan melakukan 
+                Dinas Pendidikan Kabupaten Kuningan. Tim kami akan melakukan 
                 verifikasi dan evaluasi kelayakan sekolah.
               </p>
             </div>
@@ -728,7 +728,7 @@ export default function ContactPage() {
               <p className="text-gray-600">
                 Ya, program Makan Bergizi Gratis sepenuhnya gratis untuk sekolah 
                 yang terdaftar. Semua biaya operasional ditanggung oleh 
-                Pemerintah Kabupaten Sumedang.
+                Pemerintah Kabupaten Kuningan.
               </p>
             </div>
 

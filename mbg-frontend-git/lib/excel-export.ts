@@ -88,7 +88,7 @@ export async function generateSalesReportExcel(
     const sppgRow3 = worksheet.getRow(currentRow);
     worksheet.mergeCells(currentRow, 1, currentRow, 7);
     const sppgCell3 = worksheet.getCell(currentRow, 1);
-    sppgCell3.value = 'Kecamatan Sumedang Selatan Kabupaten Sumedang';
+    sppgCell3.value = 'Kecamatan Kuningan Selatan Kabupaten Kuningan';
     sppgCell3.font = { size: 10 };
     sppgCell3.alignment = { vertical: 'middle', horizontal: 'center' };
     currentRow++;
@@ -136,7 +136,7 @@ export async function generateSalesReportExcel(
     worksheet.getCell(currentRow, 1).value = 'Alamat';
     worksheet.getCell(currentRow, 2).value = ':';
     worksheet.mergeCells(currentRow, 3, currentRow, 7);
-    worksheet.getCell(currentRow, 3).value = 'SUMEDANG';
+    worksheet.getCell(currentRow, 3).value = 'Kuningan';
     currentRow++;
 
     // Tanggal Pesan (Order Date)
@@ -321,7 +321,7 @@ export async function generateSalesReportExcel(
     // Date
     worksheet.mergeCells(currentRow, 5, currentRow, 7);
     const dateCell = worksheet.getCell(currentRow, 5);
-    dateCell.value = `Sumedang, ${formatDate(new Date().toISOString())}`;
+    dateCell.value = `Kuningan, ${formatDate(new Date().toISOString())}`;
     dateCell.alignment = { vertical: 'middle', horizontal: 'center' };
     currentRow++;
 

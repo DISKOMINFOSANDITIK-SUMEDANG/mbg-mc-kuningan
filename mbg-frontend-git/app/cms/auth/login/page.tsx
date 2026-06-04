@@ -126,13 +126,13 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen flex">
-      {/* Left Side - Background Kabupaten Sumedang (70%) */}
+      {/* Left Side - Background Kabupaten Kuningan (70%) */}
       <div className="hidden lg:flex lg:w-[70%] relative overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/images/landscape-sumedang.jpeg')"
+            backgroundImage: "url('/images/landscape-kuningan.jpeg')"
           }}
         >
           {/* Overlay */}
@@ -145,15 +145,15 @@ export default function LoginPage() {
             {/* Logo */}
             <div className="flex items-center mb-8">
               <Image
-                src="/images/logo-sumedang.png"
-                alt="Logo Kabupaten Sumedang"
+                src="/images/logo-kuningan.png"
+                alt="Logo Kabupaten Kuningan"
                 width={64}
                 height={64}
                 className="mr-4"
               />
               <div>
                 <h1 className="text-2xl font-bold">Makan Bergizi Gratis</h1>
-                <p className="text-lg opacity-90">Kabupaten Sumedang</p>
+                <p className="text-lg opacity-90">Kabupaten Kuningan</p>
               </div>
             </div>
             
@@ -167,7 +167,7 @@ export default function LoginPage() {
               </h2>
               <p className="text-xl opacity-90 leading-relaxed">
                 Platform manajemen program nasional untuk memastikan pemenuhan gizi 
-                anak sekolah di Kabupaten Sumedang.
+                anak sekolah di Kabupaten Kuningan.
               </p>
             </div>
             
@@ -182,15 +182,15 @@ export default function LoginPage() {
           <div className="lg:hidden text-center mb-8">
             <div className="flex items-center justify-center mb-4">
               <Image
-                src="/images/logo-sumedang.png"
-                alt="Logo Kabupaten Sumedang"
+                src="/images/logo-kuningan.png"
+                alt="Logo Kabupaten Kuningan"
                 width={48}
                 height={48}
                 className="mr-3"
               />
               <div className="text-left">
                 <h1 className="text-xl font-bold text-gray-900">Makan Bergizi Gratis</h1>
-                <p className="text-sm text-gray-600">Kabupaten Sumedang</p>
+                <p className="text-sm text-gray-600">Kabupaten Kuningan</p>
               </div>
             </div>
           </div>
@@ -281,7 +281,7 @@ export default function LoginPage() {
           {/* Footer */}
           <div className="mt-8 text-center">
             <p className="text-sm text-gray-500">
-              © 2025 Kabupaten Sumedang. Hak cipta dilindungi.
+              © 2025 Kabupaten Kuningan. Hak cipta dilindungi.
             </p>
           </div>
         </div>

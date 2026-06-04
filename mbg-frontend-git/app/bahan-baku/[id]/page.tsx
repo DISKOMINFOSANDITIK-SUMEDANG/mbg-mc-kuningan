@@ -310,7 +310,7 @@ export default function BahanBakuDetailPage() {
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Tentang Komoditas</h3>
                 <p className="text-gray-600 leading-relaxed">
                   {item.komoditas} merupakan salah satu komoditas pertanian yang diproduksi oleh {item.nama_kwt} 
-                  di {item.kecamatan}, Kabupaten Sumedang. Komoditas ini berkualitas tinggi dan mendukung 
+                  di {item.kecamatan}, Kabupaten Kuningan. Komoditas ini berkualitas tinggi dan mendukung 
                   ketersediaan bahan pangan lokal untuk Program Makan Bergizi Gratis dengan produksi mencapai{' '}
                   {item.produksi.toLocaleString()} {item.satuan}.
                 </p>
@@ -376,7 +376,7 @@ export default function BahanBakuDetailPage() {
               <div className="bg-white border border-gray-200 rounded-2xl p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-3">Tentang Kelompok Tani</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  {item.nama_kwt} adalah kelompok tani yang berlokasi di {item.kecamatan}, Kabupaten Sumedang. 
+                  {item.nama_kwt} adalah kelompok tani yang berlokasi di {item.kecamatan}, Kabupaten Kuningan. 
                   Kelompok ini aktif memproduksi berbagai komoditas pertanian berkualitas yang mendukung 
                   Program Makan Bergizi Gratis. Dengan total produksi mencapai {totalProduction.toLocaleString()} unit 
                   dari {uniqueCommodities} jenis komoditas, kelompok tani ini berkontribusi signifikan dalam 
@@ -395,7 +395,7 @@ export default function BahanBakuDetailPage() {
                     <p className="text-sm text-gray-600 leading-relaxed">
                       Kelompok Tani adalah organisasi berbasis masyarakat yang memberdayakan petani lokal 
                       untuk meningkatkan produksi pertanian. Dengan memanfaatkan hasil dari kelompok tani lokal, 
-                      program MBG mendukung ekonomi daerah dan keberlanjutan pertanian di Kabupaten Sumedang.
+                      program MBG mendukung ekonomi daerah dan keberlanjutan pertanian di Kabupaten Kuningan.
                     </p>
                   </div>
                 </div>

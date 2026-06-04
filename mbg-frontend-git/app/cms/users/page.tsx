@@ -504,7 +504,7 @@ export default function UsersPage() {
                           ) : user.role === 'administrator' ? (
                             <span className="text-gray-600">Administrator</span>
                           ) : user.role === 'dinas_pertanian' ? (
-                            <span className="text-gray-600">Dinas Pertanian Sumedang</span>
+                            <span className="text-gray-600">Dinas Pertanian Kuningan</span>
                           ) : (
                             <span className="text-gray-400">-</span>
                           )}

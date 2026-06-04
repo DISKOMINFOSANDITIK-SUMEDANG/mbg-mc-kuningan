@@ -114,7 +114,7 @@ export default function ProgressPage() {
               Pantau kemajuan implementasi Program Makan Bergizi Gratis
             </p>
             <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto">
-              di Kabupaten Sumedang berdasarkan jenjang pendidikan
+              di Kabupaten Kuningan berdasarkan jenjang pendidikan
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function ProgressPage() {
               Progress dalam Angka
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Pencapaian implementasi Program Makan Bergizi Gratis di Kabupaten Sumedang
+              Pencapaian implementasi Program Makan Bergizi Gratis di Kabupaten Kuningan
             </p>
           </div>
 

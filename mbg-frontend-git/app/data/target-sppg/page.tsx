@@ -191,7 +191,7 @@ export default function TargetSPPGPage() {
               Data target dan rencana pembangunan Satuan Pelayanan Pemenuhan Gizi
             </p>
             <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto">
-              (SPPG) di Kabupaten Sumedang
+              (SPPG) di Kabupaten Kuningan
             </p>
           </div>
         </div>
@@ -213,7 +213,7 @@ export default function TargetSPPGPage() {
               Ringkasan Target
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Overview target SPPG berdasarkan data perencanaan di Kabupaten Sumedang
+              Overview target SPPG berdasarkan data perencanaan di Kabupaten Kuningan
             </p>
           </div>
 

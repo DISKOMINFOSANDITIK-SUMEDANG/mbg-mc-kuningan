@@ -1,6 +1,6 @@
 # MBG Backend API
 
-Backend API for **Makan Bergizi Gratis (MBG)** - Free Nutritious Meals Program for Kabupaten Sumedang.
+Backend API for **Makan Bergizi Gratis (MBG)** - Free Nutritious Meals Program for Kabupaten Kuningan.
 
 Built with **Express.js**, **TypeScript**, and **PostgreSQL**.
 
@@ -456,13 +456,13 @@ Follow [Conventional Commits](https://www.conventionalcommits.org/):
 
 ## 📝 License
 
-This project is proprietary software for Kabupaten Sumedang.
+This project is proprietary software for Kabupaten Kuningan.
 
 ---
 
 ## 👥 Team
 
-Developed for **Kabupaten Sumedang** - Makan Bergizi Gratis Program
+Developed for **Kabupaten Kuningan** - Makan Bergizi Gratis Program
 
 ---
 
@@ -487,4 +487,4 @@ For issues and questions:
 
 ---
 
-**Made with ❤️ for Kabupaten Sumedang**
+**Made with ❤️ for Kabupaten Kuningan**

@@ -200,8 +200,8 @@ export default function Header() {
           >
             <div className="relative flex-shrink-0">
               <Image
-                src="/images/logo-sumedang.png"
-                alt="Logo Kabupaten Sumedang"
+                src="/images/logo-kuningan.png"
+                alt="Logo Kabupaten Kuningan"
                 width={44}
                 height={44}
                 className="h-9 sm:h-10 lg:h-11 w-auto transition-transform duration-300 group-hover:scale-105"
@@ -213,7 +213,7 @@ export default function Header() {
                 Makan Bergizi Gratis
               </h1>
               <p className="text-[10px] sm:text-xs text-gray-600 font-medium">
-                Kabupaten Sumedang
+                Kabupaten Kuningan
               </p>
             </div>
           </button>

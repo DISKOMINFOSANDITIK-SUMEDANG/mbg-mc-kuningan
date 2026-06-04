@@ -115,7 +115,7 @@ export default function DistributionStatsSection() {
               Penerima Manfaat MBG
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed px-4">
-              Daftar yang sudah menerima manfaat Program Makan Bergizi Gratis di Kabupaten Sumedang
+              Daftar yang sudah menerima manfaat Program Makan Bergizi Gratis di Kabupaten Kuningan
             </p>
           </div>
 
@@ -318,7 +318,7 @@ export default function DistributionStatsSection() {
             Laporan Program MBG
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Program Nasional Pemerintah Indonesia - Pantau aktivitas real-time upload menu dan laporan harian dari seluruh SPPG dan sekolah di Kabupaten Sumedang
+            Program Nasional Pemerintah Indonesia - Pantau aktivitas real-time upload menu dan laporan harian dari seluruh SPPG dan sekolah di Kabupaten Kuningan
           </p>
         </div>
 

@@ -26,7 +26,7 @@ export default function AboutPage() {
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Program prioritas nasional Pemerintah Indonesia di bawah Presiden Prabowo Subianto yang bertujuan meningkatkan gizi dan kesejahteraan rakyat. 
-              Kabupaten Sumedang adalah salah satu daerah pelaksana program dengan target menjangkau 82,9 juta penerima manfaat di seluruh Indonesia.
+              Kabupaten Kuningan adalah salah satu daerah pelaksana program dengan target menjangkau 82,9 juta penerima manfaat di seluruh Indonesia.
             </p>
           </div>
         </div>
@@ -103,7 +103,7 @@ export default function AboutPage() {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Program Makan Bergizi Gratis merupakan program strategis nasional yang dirancang dengan pendekatan holistik 
               untuk memastikan setiap anak Indonesia mendapat nutrisi optimal. 
-              Sejak Januari 2025, program ini telah menjangkau hampir 30 juta penerima manfaat di 38 provinsi, termasuk Kabupaten Sumedang.
+              Sejak Januari 2025, program ini telah menjangkau hampir 30 juta penerima manfaat di 38 provinsi, termasuk Kabupaten Kuningan.
             </p>
           </div>
 
@@ -207,7 +207,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Sumedang Implementation */}
+      {/* Kuningan Implementation */}
       <section className="relative py-24 bg-gradient-to-br from-green-50/50 via-white to-blue-50/30 overflow-hidden">
         <div className="absolute top-0 left-0 w-96 h-96 bg-green-200/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl"></div>
@@ -216,14 +216,14 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 shadow-lg shadow-green-500/30">
               <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-              Kabupaten Sumedang
+              Kabupaten Kuningan
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Implementasi di Kabupaten Sumedang
+              Implementasi di Kabupaten Kuningan
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Sebagai salah satu daerah pelaksana Program Nasional Makan Bergizi Gratis, 
-              Kabupaten Sumedang berkomitmen penuh mendukung program Presiden dengan memberikan pelayanan terbaik 
+              Kabupaten Kuningan berkomitmen penuh mendukung program Presiden dengan memberikan pelayanan terbaik 
               dalam pemenuhan gizi anak sekolah sesuai standar nasional.
             </p>
           </div>
@@ -234,7 +234,7 @@ export default function AboutPage() {
                 <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center">
                   <IconLeaf className="h-5 w-5 text-white" />
                 </div>
-                Komitmen Kabupaten Sumedang
+                Komitmen Kabupaten Kuningan
               </h3>
               <ul className="space-y-5">
                 <li className="flex items-start group">
@@ -268,7 +268,7 @@ export default function AboutPage() {
                 <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
                   <IconTarget className="h-5 w-5 text-white" />
                 </div>
-                Target Kabupaten Sumedang
+                Target Kabupaten Kuningan
               </h4>
               <div className="space-y-6">
                 <div className="flex justify-between items-center p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors duration-300">

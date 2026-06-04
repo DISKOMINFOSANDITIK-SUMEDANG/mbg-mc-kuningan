@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://mbg.sumedangkab.go.id";
+const siteUrl = "https://mbg.kuningankab.go.id";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

@@ -132,7 +132,7 @@ export { s3 as s3Client };
 
 /**
  * Convert a full S3 URL stored in the DB to a presigned URL.
- * Accepts URLs like https://s3.sumedangkab.go.id/supabase-mbg/stub/mbg-reports/file.jpg
+ * Accepts URLs like https://s3.kuningankab.go.id/supabase-mbg/stub/mbg-reports/file.jpg
  * Returns a presigned URL valid for `expiresIn` seconds (default 1 hour).
  * If the URL doesn't match the expected pattern, returns it unchanged.
  */

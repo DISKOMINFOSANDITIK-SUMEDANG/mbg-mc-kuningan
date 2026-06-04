@@ -1,4 +1,4 @@
-// Data structure for Makan Bergizi Gratis program in Sumedang
+// Data structure for Makan Bergizi Gratis program in Kuningan
 
 export interface Menu {
   id: string;
@@ -77,18 +77,18 @@ export interface DailyMenu {
   notes?: string;
 }
 
-// Sample data based on real information from Sumedang
+// Sample data based on real information from Kuningan
 export const sampleSPPGs: SPPG[] = [
   {
     id: 'sppg-001',
     name: 'Dapur Satelit Modular Sirah Cai',
     type: 'Dapur Satelit Modular',
     capacity: 600,
-    location: 'Kecamatan Sirah Cai, Sumedang',
+    location: 'Kecamatan Sirah Cai, Kuningan',
     contact: {
       phone: '+62-261-123456',
-      email: 'dapur.sirahcai@sumedangkab.go.id',
-      address: 'Jl. Raya Sirah Cai No. 123, Sumedang'
+      email: 'dapur.sirahcai@kuningankab.go.id',
+      address: 'Jl. Raya Sirah Cai No. 123, Kuningan'
     },
     facilities: [
       'Kompor gas industri',
@@ -122,11 +122,11 @@ export const sampleSPPGs: SPPG[] = [
     name: 'Dapur Pusat Tanjungsari',
     type: 'Dapur Pusat',
     capacity: 1000,
-    location: 'Kecamatan Tanjungsari, Sumedang',
+    location: 'Kecamatan Tanjungsari, Kuningan',
     contact: {
       phone: '+62-261-234567',
-      email: 'dapur.tanjungsari@sumedangkab.go.id',
-      address: 'Jl. Raya Tanjungsari No. 456, Sumedang'
+      email: 'dapur.tanjungsari@kuningankab.go.id',
+      address: 'Jl. Raya Tanjungsari No. 456, Kuningan'
     },
     facilities: [
       'Dapur industri lengkap',
@@ -162,7 +162,7 @@ export const sampleSchools: School[] = [
     id: 'school-001',
     name: 'SDN Sirah Cai',
     level: 'SD',
-    address: 'Jl. Pendidikan No. 1, Sirah Cai, Sumedang',
+    address: 'Jl. Pendidikan No. 1, Sirah Cai, Kuningan',
     district: 'Sirah Cai',
     village: 'Sirah Cai',
     sppgId: 'sppg-001',
@@ -175,7 +175,7 @@ export const sampleSchools: School[] = [
     id: 'school-002',
     name: 'SDN Sirah Cai 2',
     level: 'SD',
-    address: 'Jl. Merdeka No. 15, Sirah Cai, Sumedang',
+    address: 'Jl. Merdeka No. 15, Sirah Cai, Kuningan',
     district: 'Sirah Cai',
     village: 'Sirah Cai',
     sppgId: 'sppg-001',
@@ -188,7 +188,7 @@ export const sampleSchools: School[] = [
     id: 'school-003',
     name: 'SDN Tanjungsari 1',
     level: 'SD',
-    address: 'Jl. Pendidikan No. 10, Tanjungsari, Sumedang',
+    address: 'Jl. Pendidikan No. 10, Tanjungsari, Kuningan',
     district: 'Tanjungsari',
     village: 'Tanjungsari',
     sppgId: 'sppg-002',
@@ -201,7 +201,7 @@ export const sampleSchools: School[] = [
     id: 'school-004',
     name: 'SDN Tanjungsari 2',
     level: 'SD',
-    address: 'Jl. Kartini No. 5, Tanjungsari, Sumedang',
+    address: 'Jl. Kartini No. 5, Tanjungsari, Kuningan',
     district: 'Tanjungsari',
     village: 'Tanjungsari',
     sppgId: 'sppg-002',
@@ -214,7 +214,7 @@ export const sampleSchools: School[] = [
     id: 'school-005',
     name: 'SMPN 1 Tanjungsari',
     level: 'SMP',
-    address: 'Jl. Pahlawan No. 20, Tanjungsari, Sumedang',
+    address: 'Jl. Pahlawan No. 20, Tanjungsari, Kuningan',
     district: 'Tanjungsari',
     village: 'Tanjungsari',
     sppgId: 'sppg-002',

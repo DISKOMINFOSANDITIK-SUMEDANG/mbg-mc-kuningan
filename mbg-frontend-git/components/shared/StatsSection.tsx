@@ -51,7 +51,7 @@ export default function StatsSection() {
               Program dalam Angka
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Pencapaian program Makan Bergizi Gratis di Kabupaten Sumedang
+              Pencapaian program Makan Bergizi Gratis di Kabupaten Kuningan
             </p>
           </div>
 
@@ -90,7 +90,7 @@ export default function StatsSection() {
             Program dalam Angka
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Pencapaian program Makan Bergizi Gratis di Kabupaten Sumedang
+            Pencapaian program Makan Bergizi Gratis di Kabupaten Kuningan
           </p>
         </div>
 

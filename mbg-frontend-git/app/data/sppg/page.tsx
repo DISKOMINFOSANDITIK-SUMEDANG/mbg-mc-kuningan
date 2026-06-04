@@ -180,7 +180,7 @@ export default function SPPGPage() {
       }
     }
     
-    // Pattern 3: "Kecamatan [Name], Kabupaten Sumedang"
+    // Pattern 3: "Kecamatan [Name], Kabupaten Kuningan"
     const kecPattern3 = /Kec(?:amatan)?\s+([A-Za-z\s]+)/i;
     const match3 = text.match(kecPattern3);
     if (match3 && match3[1]) {
@@ -275,7 +275,7 @@ export default function SPPGPage() {
               Pusat produksi dan distribusi makanan bergizi gratis
             </p>
             <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto">
-              untuk mendukung tumbuh kembang optimal siswa di Kabupaten Sumedang
+              untuk mendukung tumbuh kembang optimal siswa di Kabupaten Kuningan
             </p>
           </div>
         </div>

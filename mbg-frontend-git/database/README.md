@@ -1,6 +1,6 @@
 # Database Schema - Makan Bergizi Gratis
 
-Database schema untuk program Makan Bergizi Gratis di Kabupaten Sumedang yang telah dinormalisasi dari mock data.
+Database schema untuk program Makan Bergizi Gratis di Kabupaten Kuningan yang telah dinormalisasi dari mock data.
 
 ## 📊 Database Structure
 

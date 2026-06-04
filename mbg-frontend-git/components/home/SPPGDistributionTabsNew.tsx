@@ -523,7 +523,7 @@ export default function SPPGDistributionTabsWithSubTabs({ className = '', focusN
       const rows: any[][] = [];
 
       // Row 1: Title (will be merged)
-      rows.push(['LAPORAN PER SEKOLAH - PROGRAM MBG KABUPATEN SUMEDANG', '', '', '', '', '', '', '']);
+      rows.push(['LAPORAN PER SEKOLAH - PROGRAM MBG Kabupaten Kuningan', '', '', '', '', '', '', '']);
       // Row 2: Subtitle
       rows.push(['Daftar Seluruh Sekolah Penerima Manfaat Makan Bergizi Gratis', '', '', '', '', '', '', '']);
       // Row 3: Period info
@@ -592,7 +592,7 @@ export default function SPPGDistributionTabsWithSubTabs({ className = '', focusN
       // === Summary sheet ===
       const summaryRows: any[][] = [];
       summaryRows.push(['RINGKASAN LAPORAN SEKOLAH', '']);
-      summaryRows.push(['Program Makan Bergizi Gratis - Kab. Sumedang', '']);
+      summaryRows.push(['Program Makan Bergizi Gratis - Kab. Kuningan', '']);
       summaryRows.push([]);
       summaryRows.push(['Keterangan', 'Jumlah']);
       summaryRows.push(['Total Sekolah (Unik / Tanpa Duplikat)', response.total]);

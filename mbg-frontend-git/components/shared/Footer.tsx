@@ -12,7 +12,7 @@ export default function Footer() {
             <h3 className="text-2xl font-bold mb-4">Makan Bergizi Gratis</h3>
             <p className="text-gray-300 mb-6 max-w-md">
               Program prioritas nasional Pemerintah Indonesia untuk memastikan 
-              anak-anak mendapat nutrisi berkualitas. Implementasi di Kabupaten Sumedang.
+              anak-anak mendapat nutrisi berkualitas. Implementasi di Kabupaten Kuningan.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -72,20 +72,17 @@ export default function Footer() {
                 <IconMapPin className="h-5 w-5 text-gray-400 mt-1" />
                 <div>
                   <p className="text-gray-300 text-sm">
-                    Dinas Komunikasi dan Informatika,<br />
-                    Persandian dan Statistik Kabupaten Sumedang<br />
-                    Jl. Angkrek No.103, Situ, Kec. Sumedang Utara<br />
-                    Kabupaten Sumedang, Jawa Barat 45621
+                  Dinas Komunikasi dan Informatika, Jl. Aruji Kartawinata No.15, Kec. Kuningan, Kabupaten Kuningan, Jawa Barat 45511
                   </p>
                 </div>
               </div>
-              <div className="flex items-center space-x-3">
+              {/* <div className="flex items-center space-x-3">
                 <IconBrandWhatsapp className="h-5 w-5 text-gray-400" />
                 <p className="text-gray-300 text-sm">085182245865 (WhatsApp)</p>
-              </div>
+              </div> */}
               <div className="flex items-center space-x-3">
                 <IconMail className="h-5 w-5 text-gray-400" />
-                <p className="text-gray-300 text-sm">info@sumedangkab.go.id</p>
+                <p className="text-gray-300 text-sm">diskominfo@kuningankab.go.id</p>
               </div>
             </div>
           </div>
@@ -94,7 +91,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2025 Pemerintah Kabupaten Sumedang. Semua hak dilindungi.
+              © 2025 Pemerintah Kabupaten Kuningan. Semua hak dilindungi.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="/privacy_policy" className="text-gray-400 hover:text-white text-sm transition-colors">

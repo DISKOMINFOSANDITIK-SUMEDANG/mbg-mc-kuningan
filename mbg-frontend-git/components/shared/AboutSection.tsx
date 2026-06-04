@@ -64,7 +64,7 @@ export default function AboutSection() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors">Sasaran</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                Semua siswa di sekolah-sekolah terpilih di Kabupaten Sumedang 
+                Semua siswa di sekolah-sekolah terpilih di Kabupaten Kuningan 
                 dengan prioritas daerah yang membutuhkan.
               </p>
             </div>
