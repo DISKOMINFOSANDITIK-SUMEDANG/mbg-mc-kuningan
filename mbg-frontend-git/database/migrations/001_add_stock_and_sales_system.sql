@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS public.stock_movements (
     reference_id UUID NULL, -- ID dari sales_transaction jika reference_type = 'sales_transaction'
     notes TEXT,
     created_at TIMESTAMPTZ DEFAULT NOW(),
-    created_by UUID REFERENCES auth.users(id)
+    created_by UUID REFERENCES public.users(id)
 );
 
 -- 2. Create sales_transactions table
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS public.sales_transactions (
     notes TEXT,
     created_at TIMESTAMPTZ DEFAULT NOW(),
     updated_at TIMESTAMPTZ DEFAULT NOW(),
-    created_by UUID REFERENCES auth.users(id)
+    created_by UUID REFERENCES public.users(id)
 );
 
 -- 3. Create sales_transaction_items table
@@ -92,6 +92,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+DROP TRIGGER IF EXISTS trigger_generate_transaction_number ON public.sales_transactions;
 CREATE TRIGGER trigger_generate_transaction_number
 BEFORE INSERT ON public.sales_transactions
 FOR EACH ROW
@@ -107,6 +108,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+DROP TRIGGER IF EXISTS trigger_calculate_subtotal ON public.sales_transaction_items;
 CREATE TRIGGER trigger_calculate_subtotal
 BEFORE INSERT OR UPDATE ON public.sales_transaction_items
 FOR EACH ROW
@@ -129,16 +131,19 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+DROP TRIGGER IF EXISTS trigger_update_total_on_insert ON public.sales_transaction_items;
 CREATE TRIGGER trigger_update_total_on_insert
 AFTER INSERT ON public.sales_transaction_items
 FOR EACH ROW
 EXECUTE FUNCTION update_transaction_total();
 
+DROP TRIGGER IF EXISTS trigger_update_total_on_update ON public.sales_transaction_items;
 CREATE TRIGGER trigger_update_total_on_update
 AFTER UPDATE ON public.sales_transaction_items
 FOR EACH ROW
 EXECUTE FUNCTION update_transaction_total();
 
+DROP TRIGGER IF EXISTS trigger_update_total_on_delete ON public.sales_transaction_items;
 CREATE TRIGGER trigger_update_total_on_delete
 AFTER DELETE ON public.sales_transaction_items
 FOR EACH ROW
@@ -172,6 +177,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+DROP TRIGGER IF EXISTS trigger_create_stock_movement ON public.sales_transaction_items;
 CREATE TRIGGER trigger_create_stock_movement
 AFTER INSERT ON public.sales_transaction_items
 FOR EACH ROW
@@ -192,6 +198,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+DROP TRIGGER IF EXISTS trigger_update_stock_movement ON public.sales_transaction_items;
 CREATE TRIGGER trigger_update_stock_movement
 AFTER UPDATE ON public.sales_transaction_items
 FOR EACH ROW
@@ -211,6 +218,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+DROP TRIGGER IF EXISTS trigger_delete_stock_movement ON public.sales_transaction_items;
 CREATE TRIGGER trigger_delete_stock_movement
 AFTER DELETE ON public.sales_transaction_items
 FOR EACH ROW
@@ -239,151 +247,9 @@ LEFT JOIN public.stock_movements sm ON sp.id = sm.supplier_product_id
 LEFT JOIN public.commodities c ON sp.commodity_id = c.id
 GROUP BY sp.id, sp.supplier_id, sp.commodity_id, c.name, c.unit, sp.stock;
 
--- =====================================================
--- RLS (Row Level Security) Policies
--- =====================================================
-
--- Enable RLS
-ALTER TABLE public.stock_movements ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.sales_transactions ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.sales_transaction_items ENABLE ROW LEVEL SECURITY;
-
--- Stock Movements Policies
-CREATE POLICY "Pemasok can view their own stock movements"
-ON public.stock_movements FOR SELECT
-USING (
-    supplier_product_id IN (
-        SELECT id FROM public.supplier_products 
-        WHERE supplier_id IN (
-            SELECT id FROM public.suppliers WHERE user_id = auth.uid()
-        )
-    )
-);
-
-CREATE POLICY "Pemasok can create stock movements for their products"
-ON public.stock_movements FOR INSERT
-WITH CHECK (
-    supplier_product_id IN (
-        SELECT id FROM public.supplier_products 
-        WHERE supplier_id IN (
-            SELECT id FROM public.suppliers WHERE user_id = auth.uid()
-        )
-    )
-);
-
-CREATE POLICY "Admin can view all stock movements"
-ON public.stock_movements FOR SELECT
-USING (
-    EXISTS (
-        SELECT 1 FROM public.users 
-        WHERE id = auth.uid() AND role = 'administrator'
-    )
-);
-
--- Sales Transactions Policies
-CREATE POLICY "Pemasok can view their own transactions"
-ON public.sales_transactions FOR SELECT
-USING (
-    supplier_id IN (
-        SELECT id FROM public.suppliers WHERE user_id = auth.uid()
-    )
-);
-
-CREATE POLICY "Pemasok can create transactions"
-ON public.sales_transactions FOR INSERT
-WITH CHECK (
-    supplier_id IN (
-        SELECT id FROM public.suppliers WHERE user_id = auth.uid()
-    )
-);
-
-CREATE POLICY "Pemasok can update their own transactions"
-ON public.sales_transactions FOR UPDATE
-USING (
-    supplier_id IN (
-        SELECT id FROM public.suppliers WHERE user_id = auth.uid()
-    )
-);
-
-CREATE POLICY "SPPG can view transactions related to them"
-ON public.sales_transactions FOR SELECT
-USING (
-    sppg_id IN (
-        SELECT id FROM public.sppgs WHERE user_id = auth.uid()
-    )
-);
-
-CREATE POLICY "Admin can view all transactions"
-ON public.sales_transactions FOR SELECT
-USING (
-    EXISTS (
-        SELECT 1 FROM public.users 
-        WHERE id = auth.uid() AND role = 'administrator'
-    )
-);
-
--- Sales Transaction Items Policies
-CREATE POLICY "Pemasok can view their transaction items"
-ON public.sales_transaction_items FOR SELECT
-USING (
-    sales_transaction_id IN (
-        SELECT id FROM public.sales_transactions
-        WHERE supplier_id IN (
-            SELECT id FROM public.suppliers WHERE user_id = auth.uid()
-        )
-    )
-);
-
-CREATE POLICY "Pemasok can create transaction items"
-ON public.sales_transaction_items FOR INSERT
-WITH CHECK (
-    sales_transaction_id IN (
-        SELECT id FROM public.sales_transactions
-        WHERE supplier_id IN (
-            SELECT id FROM public.suppliers WHERE user_id = auth.uid()
-        )
-    )
-);
-
-CREATE POLICY "Pemasok can update their transaction items"
-ON public.sales_transaction_items FOR UPDATE
-USING (
-    sales_transaction_id IN (
-        SELECT id FROM public.sales_transactions
-        WHERE supplier_id IN (
-            SELECT id FROM public.suppliers WHERE user_id = auth.uid()
-        )
-    )
-);
-
-CREATE POLICY "Pemasok can delete their transaction items"
-ON public.sales_transaction_items FOR DELETE
-USING (
-    sales_transaction_id IN (
-        SELECT id FROM public.sales_transactions
-        WHERE supplier_id IN (
-            SELECT id FROM public.suppliers WHERE user_id = auth.uid()
-        )
-    )
-);
-
-CREATE POLICY "Admin can view all transaction items"
-ON public.sales_transaction_items FOR SELECT
-USING (
-    EXISTS (
-        SELECT 1 FROM public.users 
-        WHERE id = auth.uid() AND role = 'administrator'
-    )
-);
-
--- =====================================================
--- GRANT PERMISSIONS
--- =====================================================
-
-GRANT SELECT, INSERT ON public.stock_movements TO authenticated;
-GRANT SELECT, INSERT, UPDATE ON public.sales_transactions TO authenticated;
-GRANT SELECT, INSERT, UPDATE, DELETE ON public.sales_transaction_items TO authenticated;
-GRANT SELECT ON public.current_stock_view TO authenticated;
+-- Access control is enforced by the Express API in this Docker/PostgreSQL setup.
+-- The original Supabase RLS policies used auth.uid() and the authenticated role,
+-- which are not available in the plain Postgres container.
 
 -- =====================================================
 -- END OF MIGRATION
