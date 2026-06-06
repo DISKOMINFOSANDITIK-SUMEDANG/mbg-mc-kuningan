@@ -3,7 +3,9 @@ services:
   # PostgreSQL Database
   # ─────────────────────────────────────────────────────────────────────────────
   postgres:
-    image: postgres:16-alpine
+    build:
+      context: .
+      dockerfile: postgres/Dockerfile
     container_name: mbg-postgres
     environment:
       POSTGRES_USER: ${DB_USER:-mbg_user}
@@ -13,17 +15,6 @@ services:
       - "${DB_PORT:-5432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ${FRONTEND_SOURCE_DIR}/database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
-      - ${FRONTEND_SOURCE_DIR}/database/auth-schema.sql:/docker-entrypoint-initdb.d/02-auth-schema.sql
-      - ${FRONTEND_SOURCE_DIR}/database/seed.sql:/docker-entrypoint-initdb.d/03-seed.sql
-      - ${FRONTEND_SOURCE_DIR}/database/migrations/001_add_supplier_management.sql:/docker-entrypoint-initdb.d/04-add-supplier-management.sql
-      - ${FRONTEND_SOURCE_DIR}/database/migrations/001_add_stock_and_sales_system.sql:/docker-entrypoint-initdb.d/05-add-stock-and-sales-system.sql
-      - ${FRONTEND_SOURCE_DIR}/database/migrations/002_add_sppg_is_active.sql:/docker-entrypoint-initdb.d/06-add-sppg-is-active.sql
-      - ${FRONTEND_SOURCE_DIR}/database/migrations/003_add_offtaker_management.sql:/docker-entrypoint-initdb.d/07-add-offtaker-management.sql
-      - ${BACKEND_SOURCE_DIR}/src/db/migrations/001_user_profiles_unique_user_id.sql:/docker-entrypoint-initdb.d/08-user-profiles-unique-user-id.sql
-      - ${BACKEND_SOURCE_DIR}/src/db/migrations/002_menu_items_nullable_nutrition.sql:/docker-entrypoint-initdb.d/09-menu-items-nullable-nutrition.sql
-      - ${BACKEND_SOURCE_DIR}/src/db/migrations/003_laporan_pesan_tujuan.sql:/docker-entrypoint-initdb.d/10-laporan-pesan-tujuan.sql
-      - ${BACKEND_SOURCE_DIR}/src/db/migrations/004_sppgs_add_is_active.sql:/docker-entrypoint-initdb.d/11-sppgs-add-is-active.sql
     networks:
       - mbg-network
     healthcheck:
