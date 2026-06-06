@@ -62,6 +62,7 @@ logs/
 # Data / import scripts (local use only)
 *.csv
 *.sql
+!database/*.sql
 !database/migrations/*.sql
 valid_*.json
 import_summary.json
