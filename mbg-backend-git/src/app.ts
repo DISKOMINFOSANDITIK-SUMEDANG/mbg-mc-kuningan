@@ -60,17 +60,17 @@ const configuredOrigins = config.cors.origin
   .filter(Boolean);
 
 const allowedOrigins = [
-  'https://mbg.kuningankab.go.id',
+  'https://mbg.sumedangkab.go.id',
   ...configuredOrigins,
   ...(config.nodeEnv !== 'production' ? ['http://localhost:3000', 'http://localhost:3001', 'http://10.0.2.2:3001'] : []),
 ];
 
 app.use(cors({
   origin: function(origin, callback) {
-    // Block requests with no origin in production (disallows curl/Postman direct access)
+    // Requests from server-side rendering, reverse proxies, health checks, curl, or
+    // Postman may not include Origin. CORS only applies to browser-origin requests.
     if (!origin) {
-      if (config.nodeEnv !== 'production') return callback(null, true);
-      return callback(new Error('CORS: No origin'), false);
+      return callback(null, true);
     }
     if (allowedOrigins.includes(origin)) {
       return callback(null, true);

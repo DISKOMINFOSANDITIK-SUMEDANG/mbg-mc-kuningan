@@ -6,6 +6,7 @@ mbg-frontend/
 .DS_Store
 
 # Local environment
+.env
 .env.local
 .env.*.local
 

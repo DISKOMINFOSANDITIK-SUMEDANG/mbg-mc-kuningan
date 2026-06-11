@@ -121,11 +121,10 @@ SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
 ```
 
 ### 2. Database Migration
-Schema sudah diimport ke Supabase menggunakan MCP. Jika perlu re-import:
+Schema dan data sudah tersedia dalam full database export. Jika perlu re-import, gunakan file:
 
-```sql
--- Run schema.sql to create tables
--- Run seed.sql to populate with sample data
+```bash
+db_mbg_local_export_20260510_063517.sql
 ```
 
 ### 3. Data Verification

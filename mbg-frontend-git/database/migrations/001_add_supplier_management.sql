@@ -167,33 +167,53 @@ ALTER TABLE commodities ENABLE ROW LEVEL SECURITY;
 ALTER TABLE supplier_products ENABLE ROW LEVEL SECURITY;
 
 -- RLS Policies for suppliers
+DROP POLICY IF EXISTS suppliers_select_policy ON suppliers;
 CREATE POLICY suppliers_select_policy ON suppliers FOR SELECT USING (true);
+DROP POLICY IF EXISTS suppliers_insert_policy ON suppliers;
 CREATE POLICY suppliers_insert_policy ON suppliers FOR INSERT WITH CHECK (true);
+DROP POLICY IF EXISTS suppliers_update_policy ON suppliers;
 CREATE POLICY suppliers_update_policy ON suppliers FOR UPDATE USING (true);
+DROP POLICY IF EXISTS suppliers_delete_policy ON suppliers;
 CREATE POLICY suppliers_delete_policy ON suppliers FOR DELETE USING (true);
 
 -- RLS Policies for supplier_users
+DROP POLICY IF EXISTS supplier_users_select_policy ON supplier_users;
 CREATE POLICY supplier_users_select_policy ON supplier_users FOR SELECT USING (true);
+DROP POLICY IF EXISTS supplier_users_insert_policy ON supplier_users;
 CREATE POLICY supplier_users_insert_policy ON supplier_users FOR INSERT WITH CHECK (true);
+DROP POLICY IF EXISTS supplier_users_update_policy ON supplier_users;
 CREATE POLICY supplier_users_update_policy ON supplier_users FOR UPDATE USING (true);
+DROP POLICY IF EXISTS supplier_users_delete_policy ON supplier_users;
 CREATE POLICY supplier_users_delete_policy ON supplier_users FOR DELETE USING (true);
 
 -- RLS Policies for commodity_categories
+DROP POLICY IF EXISTS commodity_categories_select_policy ON commodity_categories;
 CREATE POLICY commodity_categories_select_policy ON commodity_categories FOR SELECT USING (true);
+DROP POLICY IF EXISTS commodity_categories_insert_policy ON commodity_categories;
 CREATE POLICY commodity_categories_insert_policy ON commodity_categories FOR INSERT WITH CHECK (true);
+DROP POLICY IF EXISTS commodity_categories_update_policy ON commodity_categories;
 CREATE POLICY commodity_categories_update_policy ON commodity_categories FOR UPDATE USING (true);
+DROP POLICY IF EXISTS commodity_categories_delete_policy ON commodity_categories;
 CREATE POLICY commodity_categories_delete_policy ON commodity_categories FOR DELETE USING (true);
 
 -- RLS Policies for commodities
+DROP POLICY IF EXISTS commodities_select_policy ON commodities;
 CREATE POLICY commodities_select_policy ON commodities FOR SELECT USING (true);
+DROP POLICY IF EXISTS commodities_insert_policy ON commodities;
 CREATE POLICY commodities_insert_policy ON commodities FOR INSERT WITH CHECK (true);
+DROP POLICY IF EXISTS commodities_update_policy ON commodities;
 CREATE POLICY commodities_update_policy ON commodities FOR UPDATE USING (true);
+DROP POLICY IF EXISTS commodities_delete_policy ON commodities;
 CREATE POLICY commodities_delete_policy ON commodities FOR DELETE USING (true);
 
 -- RLS Policies for supplier_products
+DROP POLICY IF EXISTS supplier_products_select_policy ON supplier_products;
 CREATE POLICY supplier_products_select_policy ON supplier_products FOR SELECT USING (true);
+DROP POLICY IF EXISTS supplier_products_insert_policy ON supplier_products;
 CREATE POLICY supplier_products_insert_policy ON supplier_products FOR INSERT WITH CHECK (true);
+DROP POLICY IF EXISTS supplier_products_update_policy ON supplier_products;
 CREATE POLICY supplier_products_update_policy ON supplier_products FOR UPDATE USING (true);
+DROP POLICY IF EXISTS supplier_products_delete_policy ON supplier_products;
 CREATE POLICY supplier_products_delete_policy ON supplier_products FOR DELETE USING (true);
 
 -- ============================================

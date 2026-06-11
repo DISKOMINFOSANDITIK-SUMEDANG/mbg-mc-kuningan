@@ -3,7 +3,9 @@ services:
   # PostgreSQL Database
   # ─────────────────────────────────────────────────────────────────────────────
   postgres:
-    image: postgres:16-alpine
+    build:
+      context: .
+      dockerfile: postgres/Dockerfile
     container_name: mbg-postgres
     environment:
       POSTGRES_USER: ${DB_USER:-mbg_user}
@@ -13,9 +15,6 @@ services:
       - "${DB_PORT:-5432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ${FRONTEND_SOURCE_DIR}/database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
-      - ${FRONTEND_SOURCE_DIR}/database/auth-schema.sql:/docker-entrypoint-initdb.d/02-auth-schema.sql
-      - ${FRONTEND_SOURCE_DIR}/database/seed.sql:/docker-entrypoint-initdb.d/03-seed.sql
     networks:
       - mbg-network
     healthcheck:
