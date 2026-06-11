@@ -6,6 +6,7 @@ import path from 'path';
 import { config } from './config';
 import { errorHandler } from './middleware/errorHandler';
 import { apiRateLimiter } from './middleware/rateLimiter';
+import { pathAliasMiddleware } from './middleware/pathAlias';
 
 // Public (non-CMS) routes
 import authRoutes from './routes/auth.routes';
@@ -91,6 +92,10 @@ app.use(cookieParser());
 
 // Rate limiting
 app.use('/api/', apiRateLimiter);
+
+// Rewrite frontend-friendly API paths before route matching (required when
+// nginx proxies /api/* directly to Express instead of through Next.js)
+app.use(pathAliasMiddleware);
 
 // Static files (uploads)
 app.use('/uploads', express.static(path.resolve(config.storage.uploadsDir)));
