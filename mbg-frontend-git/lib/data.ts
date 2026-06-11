@@ -113,7 +113,7 @@ export const sampleSPPGs: SPPG[] = [
     slhsCertificate: {
       fileUrl: 'https://placehold.co/800x600/DC2626/FFFFFF/pdf?text=Sertifikat+Laik+Higiene+Sanitasi',
       issueDate: '2024-01-15',
-      expiryDate: '2025-01-15',
+      expiryDate: '2026-01-15',
       certificateNumber: 'SLHS/SUMEDANG/2024/001'
     }
   },
@@ -151,7 +151,7 @@ export const sampleSPPGs: SPPG[] = [
     slhsCertificate: {
       fileUrl: 'https://placehold.co/800x600/DC2626/FFFFFF/pdf?text=Sertifikat+Laik+Higiene+Sanitasi',
       issueDate: '2024-02-01',
-      expiryDate: '2025-02-01',
+      expiryDate: '2026-02-01',
       certificateNumber: 'SLHS/SUMEDANG/2024/002'
     }
   }
@@ -193,7 +193,7 @@ export const sampleSchools: School[] = [
     village: 'Tanjungsari',
     sppgId: 'sppg-002',
     studentCount: 320,
-    programStartDate: '2025-02-17',
+    programStartDate: '2026-02-17',
     status: 'Active',
     coordinates: { lat: -6.8500, lng: 107.9000 }
   },
@@ -206,7 +206,7 @@ export const sampleSchools: School[] = [
     village: 'Tanjungsari',
     sppgId: 'sppg-002',
     studentCount: 280,
-    programStartDate: '2025-02-17',
+    programStartDate: '2026-02-17',
     status: 'Active',
     coordinates: { lat: -6.8480, lng: 107.9020 }
   },
@@ -219,7 +219,7 @@ export const sampleSchools: School[] = [
     village: 'Tanjungsari',
     sppgId: 'sppg-002',
     studentCount: 400,
-    programStartDate: '2025-02-17',
+    programStartDate: '2026-02-17',
     status: 'Active',
     coordinates: { lat: -6.8520, lng: 107.8980 }
   }

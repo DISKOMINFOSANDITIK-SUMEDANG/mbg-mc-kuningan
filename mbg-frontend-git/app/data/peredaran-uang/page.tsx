@@ -197,7 +197,7 @@ export default function PeredaranUangPage() {
               Kabupaten Kuningan
             </p>
             <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto">
-              Periode Januari - November 2025
+              Periode Januari - November 2026
             </p>
           </div>
         </div>
@@ -240,7 +240,7 @@ export default function PeredaranUangPage() {
                     {formatCurrency(totalPeredaran)}
                   </div>
                   <div className="text-white/80 text-sm font-medium mb-1">Total Peredaran</div>
-                  <div className="text-white/60 text-xs">Jan - Nov 2025</div>
+                  <div className="text-white/60 text-xs">Jan - Nov 2026</div>
                 </div>
               </div>
             </div>
@@ -355,7 +355,7 @@ export default function PeredaranUangPage() {
               <span>Tren Tahunan</span>
             </div>
             <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
-              Tren Peredaran Uang Tahun 2025
+              Tren Peredaran Uang Tahun 2026
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
               Total peredaran uang MBG untuk semua kecamatan per bulan

@@ -38,7 +38,7 @@ export default function Home() {
       {/* {loading ? <ReligiousEducationSkeleton /> : <ReligiousEducationSection />} */}
 
       {/* Remote SPPG Section with Skeleton */}
-      {loading ? <RemoteSPPGSkeleton /> : <RemoteSPPGSection />}
+      {/* {loading ? <RemoteSPPGSkeleton /> : <RemoteSPPGSection />} */}
 
       {/* Stats Section */}
       {/* <StatsSection /> */}

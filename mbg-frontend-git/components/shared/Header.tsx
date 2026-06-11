@@ -234,13 +234,13 @@ export default function Header() {
             >
               Sekolah
             </NavLink>
-            <NavLink
+            {/* <NavLink
               onClick={() => navigateToPage("/groups")}
               active={pathname === "/groups" || pathname.startsWith("/groups/")}
               icon={<IconUsers className="h-4 w-4" />}
             >
               Kelompok
-            </NavLink>
+            </NavLink> */}
             <NavLink
               onClick={() => navigateToPage("/sppg-search")}
               active={pathname === "/sppg-search"}
@@ -357,13 +357,13 @@ export default function Header() {
               >
                 Sekolah
               </MobileNavLink>
-              <MobileNavLink
+              {/* <MobileNavLink
                 onClick={() => navigateToPage("/groups")}
                 active={pathname === "/groups" || pathname.startsWith("/groups/")}
                 icon={<IconUsers className="h-5 w-5" />}
               >
                 Kelompok
-              </MobileNavLink>
+              </MobileNavLink> */}
               <MobileNavLink
                 onClick={() => navigateToPage("/sppg-search")}
                 active={pathname === "/sppg-search"}

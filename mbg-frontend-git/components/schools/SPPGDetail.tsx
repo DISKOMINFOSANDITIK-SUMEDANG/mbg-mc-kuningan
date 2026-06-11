@@ -207,7 +207,7 @@ export default function SPPGDetail({ sppg }: SPPGDetailProps) {
   const slhs: SLHSCertificate = {
     fileUrl: '/documents/slhs-certificate.pdf',
     issueDate: '2023-01-15',
-    expiryDate: '2025-01-15',
+    expiryDate: '2026-01-15',
     certificateNumber: 'SLHS-2023-001'
   };
 

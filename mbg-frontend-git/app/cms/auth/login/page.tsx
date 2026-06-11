@@ -64,10 +64,10 @@ export default function LoginPage() {
   // Show loading spinner while checking authentication
   if (isCheckingAuth) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-50 via-white to-emerald-50">
         <div className="text-center">
-          <div className="w-8 h-8 border-2 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-gray-600">Memeriksa status Anda...</p>
+          <div className="w-10 h-10 border-[3px] border-emerald-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-gray-500 font-medium">Memeriksa status Anda...</p>
         </div>
       </div>
     );
@@ -125,99 +125,107 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex">
-      {/* Left Side - Background Kabupaten Kuningan (70%) */}
-      <div className="hidden lg:flex lg:w-[70%] relative overflow-hidden">
+    <div className="min-h-screen flex bg-white">
+      {/* Left Side - Background Kabupaten Kuningan (60%) */}
+      <div className="hidden lg:flex lg:w-[58%] relative overflow-hidden">
         {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105"
           style={{
-            backgroundImage: "url('/images/landscape-kuningan.jpeg')"
+            backgroundImage: "url('/images/landscape-kuningan.webp')",
           }}
         >
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/40"></div>
+          {/* Gradient Overlay for depth & readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/90 via-emerald-900/40 to-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent"></div>
         </div>
-        
+
         {/* Content */}
-        <div className="relative z-10 flex flex-col justify-center items-start p-16 text-white">
-          <div className="max-w-lg">
-            {/* Logo */}
-            <div className="flex items-center mb-8">
+        <div className="relative z-10 flex flex-col justify-between w-full p-14 text-white">
+          {/* Logo */}
+          <div className="flex items-center">
+            <div className="bg-white/15 backdrop-blur-md rounded-2xl p-2.5 ring-1 ring-white/20">
               <Image
                 src="/images/logo-kuningan.png"
                 alt="Logo Kabupaten Kuningan"
-                width={64}
-                height={64}
-                className="mr-4"
+                width={52}
+                height={52}
+                className="drop-shadow"
               />
-              <div>
-                <h1 className="text-2xl font-bold">Makan Bergizi Gratis</h1>
-                <p className="text-lg opacity-90">Kabupaten Kuningan</p>
-              </div>
             </div>
-            
-            {/* Welcome Text */}
-            <div className="mb-8">
-              <h2 className="text-4xl font-bold mb-4 leading-tight">
-                Selamat Datang di
-                <span className="block text-green-400">
-                  Sistem Makan Bergizi Gratis
-                </span>
-              </h2>
-              <p className="text-xl opacity-90 leading-relaxed">
-                Platform manajemen program nasional untuk memastikan pemenuhan gizi 
-                anak sekolah di Kabupaten Kuningan.
-              </p>
+            <div className="ml-4">
+              <h1 className="text-xl font-bold tracking-tight">Makan Bergizi Gratis</h1>
+              <p className="text-sm text-emerald-100/90">Kabupaten Kuningan</p>
             </div>
-            
           </div>
+
+          {/* Welcome Text */}
+          <div className="max-w-xl">
+            <span className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-md px-4 py-1.5 text-sm font-medium text-emerald-50 ring-1 ring-white/20 mb-6">
+              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Program Nasional
+            </span>
+            <h2 className="text-5xl font-bold leading-[1.1] tracking-tight">
+              Selamat Datang di
+              <span className="block mt-2 bg-gradient-to-r from-emerald-300 to-green-400 bg-clip-text text-transparent">
+                Sistem Makan Bergizi Gratis
+              </span>
+            </h2>
+            <p className="mt-6 text-lg text-white/80 leading-relaxed">
+              Platform manajemen program nasional untuk memastikan pemenuhan gizi
+              anak sekolah di Kabupaten Kuningan.
+            </p>
+          </div>
+
+          {/* Footer note */}
+          <p className="text-sm text-white/60">
+            © 2026 Kabupaten Kuningan. Hak cipta dilindungi.
+          </p>
         </div>
       </div>
 
-      {/* Right Side - Login Form (30%) */}
-      <div className="w-full lg:w-[30%] bg-white flex items-center justify-center p-8">
+      {/* Right Side - Login Form (42%) */}
+      <div className="w-full lg:w-[42%] flex items-center justify-center p-6 sm:p-10 bg-gradient-to-br from-white via-white to-emerald-50/40">
         <div className="w-full max-w-md">
           {/* Mobile Logo (visible only on mobile) */}
-          <div className="lg:hidden text-center mb-8">
-            <div className="flex items-center justify-center mb-4">
+          <div className="lg:hidden flex items-center justify-center mb-10">
+            <div className="bg-emerald-50 rounded-2xl p-2.5 ring-1 ring-emerald-100">
               <Image
                 src="/images/logo-kuningan.png"
                 alt="Logo Kabupaten Kuningan"
-                width={48}
-                height={48}
-                className="mr-3"
+                width={44}
+                height={44}
               />
-              <div className="text-left">
-                <h1 className="text-xl font-bold text-gray-900">Makan Bergizi Gratis</h1>
-                <p className="text-sm text-gray-600">Kabupaten Kuningan</p>
-              </div>
+            </div>
+            <div className="ml-3">
+              <h1 className="text-lg font-bold text-gray-900">Makan Bergizi Gratis</h1>
+              <p className="text-sm text-gray-500">Kabupaten Kuningan</p>
             </div>
           </div>
 
           {/* Login Form Header */}
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">Selamat Datang!</h2>
-            <p className="text-gray-600">Silakan masuk untuk mengakses dashboard sistem</p>
+            <h2 className="text-3xl font-bold text-gray-900 tracking-tight">Selamat Datang!</h2>
+            <p className="mt-2 text-gray-500">Silakan masuk untuk mengakses dashboard sistem</p>
           </div>
 
           {/* Login Form */}
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-5">
             {/* Email Field */}
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
                 Alamat Email
               </label>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <IconMail className="h-5 w-5 text-gray-400" />
+              <div className="relative group">
+                <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                  <IconMail className="h-5 w-5 text-gray-400 group-focus-within:text-emerald-600 transition-colors" />
                 </div>
                 <input
                   id="email"
                   name="email"
                   type="email"
                   required
-                  className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                  className="block w-full pl-11 pr-3 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 placeholder-gray-400 focus:bg-white focus:ring-4 focus:ring-emerald-500/10 focus:border-emerald-500 transition-all outline-none"
                   placeholder="Masukkan Email Anda"
                 />
               </div>
@@ -225,30 +233,31 @@ export default function LoginPage() {
 
             {/* Password Field */}
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
+              <label htmlFor="password" className="block text-sm font-semibold text-gray-700 mb-2">
                 Kata Sandi
               </label>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <IconLock className="h-5 w-5 text-gray-400" />
+              <div className="relative group">
+                <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                  <IconLock className="h-5 w-5 text-gray-400 group-focus-within:text-emerald-600 transition-colors" />
                 </div>
                 <input
                   id="password"
                   name="password"
                   type={showPassword ? 'text' : 'password'}
                   required
-                  className="block w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                  className="block w-full pl-11 pr-12 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 placeholder-gray-400 focus:bg-white focus:ring-4 focus:ring-emerald-500/10 focus:border-emerald-500 transition-all outline-none"
                   placeholder="Masukkan kata sandi Anda"
                 />
                 <button
                   type="button"
-                  className="absolute inset-y-0 right-0 pr-3 flex items-center"
+                  className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-gray-400 hover:text-emerald-600 transition-colors"
                   onClick={() => setShowPassword(!showPassword)}
+                  aria-label={showPassword ? 'Sembunyikan kata sandi' : 'Tampilkan kata sandi'}
                 >
                   {showPassword ? (
-                    <IconEyeOff className="h-5 w-5 text-gray-400 hover:text-gray-600" />
+                    <IconEyeOff className="h-5 w-5" />
                   ) : (
-                    <IconEye className="h-5 w-5 text-gray-400 hover:text-gray-600" />
+                    <IconEye className="h-5 w-5" />
                   )}
                 </button>
               </div>
@@ -256,8 +265,9 @@ export default function LoginPage() {
 
             {/* Error Message */}
             {error && (
-              <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-                <p className="text-red-600 text-sm">{error}</p>
+              <div className="flex items-start gap-2.5 bg-red-50 border border-red-100 rounded-xl p-3.5">
+                <span className="mt-0.5 h-2 w-2 rounded-full bg-red-500 shrink-0"></span>
+                <p className="text-red-600 text-sm leading-relaxed">{error}</p>
               </div>
             )}
 
@@ -265,7 +275,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-gradient-to-r from-emerald-600 to-green-600 text-white py-3.5 px-4 rounded-xl font-semibold shadow-lg shadow-emerald-600/20 hover:shadow-emerald-600/30 hover:from-emerald-700 hover:to-green-700 focus:ring-4 focus:ring-emerald-500/30 active:scale-[0.99] transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed disabled:active:scale-100"
             >
               {isLoading ? (
                 <div className="flex items-center justify-center">
@@ -279,9 +289,9 @@ export default function LoginPage() {
           </form>
 
           {/* Footer */}
-          <div className="mt-8 text-center">
-            <p className="text-sm text-gray-500">
-              © 2025 Kabupaten Kuningan. Hak cipta dilindungi.
+          <div className="mt-10 text-center">
+            <p className="text-sm text-gray-400">
+              © 2026 Kabupaten Kuningan. Hak cipta dilindungi.
             </p>
           </div>
         </div>

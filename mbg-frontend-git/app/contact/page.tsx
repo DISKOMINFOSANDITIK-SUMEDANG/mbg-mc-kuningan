@@ -283,10 +283,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-1">Alamat Kantor</h3>
                   <p className="text-gray-600">
-                    Dinas Komunikasi dan Informatika, Jl. Aruji Kartawinata No.15, Kec. Kuningan, Kabupaten Kuningan, Jawa Barat 45511<br />
-                    Kabupaten Kuningan<br />
-                    Situ, Kec. Kuningan Utara<br />
-                    Kabupaten Kuningan, Jawa Barat 45621
+                  Dinas Komunikasi dan Informatika, Jl. Aruji Kartawinata No.15, Kec. Kuningan, Kabupaten Kuningan, Jawa Barat 45511 
                   </p>
                 </div>
               </div>
@@ -672,7 +669,7 @@ export default function ContactPage() {
                   <div className="text-center">
                     <IconMapPin className="h-12 w-12 text-gray-400 mx-auto mb-2" />
                     <p className="text-gray-500">Peta Lokasi Kantor</p>
-                    <p className="text-sm text-gray-400">Jl. Angkrek No.103, Situ, Kec. Kuningan Utara</p>
+                    <p className="text-sm text-gray-400">Dinas Komunikasi dan Informatika, Jl. Aruji Kartawinata No.15, Kec. Kuningan, Kabupaten Kuningan, Jawa Barat 45511</p>
                   </div>
                 </div>
                 {/* LAPOR Section */}

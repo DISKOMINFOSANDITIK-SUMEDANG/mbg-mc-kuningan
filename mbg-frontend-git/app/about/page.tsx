@@ -103,7 +103,7 @@ export default function AboutPage() {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Program Makan Bergizi Gratis merupakan program strategis nasional yang dirancang dengan pendekatan holistik 
               untuk memastikan setiap anak Indonesia mendapat nutrisi optimal. 
-              Sejak Januari 2025, program ini telah menjangkau hampir 30 juta penerima manfaat di 38 provinsi, termasuk Kabupaten Kuningan.
+              Sejak Januari 2026, program ini telah menjangkau hampir 30 juta penerima manfaat di 38 provinsi, termasuk Kabupaten Kuningan.
             </p>
           </div>
 
@@ -189,7 +189,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="group bg-white rounded-2xl p-8 border-2 border-blue-100 hover:border-blue-300 shadow-lg hover:shadow-2xl transition-all duration-300">
               <div className="text-5xl font-bold bg-gradient-to-br from-blue-600 to-blue-700 bg-clip-text text-transparent mb-3">25 Juta</div>
-              <p className="text-gray-600 font-medium">Penerima Manfaat<br/><span className="text-sm text-gray-500">(September 2025)</span></p>
+              <p className="text-gray-600 font-medium">Penerima Manfaat<br/><span className="text-sm text-gray-500">(September 2026)</span></p>
             </div>
             <div className="group bg-white rounded-2xl p-8 border-2 border-green-100 hover:border-green-300 shadow-lg hover:shadow-2xl transition-all duration-300">
               <div className="text-5xl font-bold bg-gradient-to-br from-green-600 to-green-700 bg-clip-text text-transparent mb-3">5.905</div>

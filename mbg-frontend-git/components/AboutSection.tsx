@@ -132,7 +132,7 @@ export default function AboutSection() {
                       <span className="text-xs font-semibold text-green-700">Milestone 2</span>
                     </div>
                     <h4 className="font-bold text-xl text-gray-900 mb-2 group-hover:text-green-600 transition-colors">Ekspansi Program</h4>
-                    <p className="text-sm font-semibold text-green-600 mb-3">17 Februari 2025</p>
+                    <p className="text-sm font-semibold text-green-600 mb-3">17 Februari 2026</p>
                     <p className="text-sm text-gray-700 leading-relaxed">
                       4 sekolah di Kecamatan Tanjungsari mulai menerima program
                     </p>
@@ -147,7 +147,7 @@ export default function AboutSection() {
                       <div className="w-2 h-2 bg-yellow-600 rounded-full"></div>
                       <span className="text-xs font-semibold text-yellow-700">Target</span>
                     </div>
-                    <h4 className="font-bold text-xl text-gray-900 mb-2 group-hover:text-yellow-600 transition-colors">Target 2025</h4>
+                    <h4 className="font-bold text-xl text-gray-900 mb-2 group-hover:text-yellow-600 transition-colors">Target 2026</h4>
                     <p className="text-sm font-semibold text-yellow-600 mb-3">Sepanjang Tahun</p>
                     <p className="text-sm text-gray-700 leading-relaxed">
                       Ekspansi ke lebih banyak sekolah di seluruh Kabupaten Kuningan

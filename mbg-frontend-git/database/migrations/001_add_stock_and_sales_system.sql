@@ -1,7 +1,7 @@
 -- =====================================================
 -- MIGRATION: Stock Management & Sales Transaction System
 -- Description: Add tables for stock movements and sales transactions
--- Date: 2025-12-22
+-- Date: 2026-12-22
 -- =====================================================
 
 -- 1. Create stock_movements table
@@ -75,7 +75,7 @@ DECLARE
     sequence_num INT;
     new_number TEXT;
 BEGIN
-    -- Format: TRX-20251222-00001 (OLD FORMAT - See migration for new format)
+    -- Format: TRX-20261222-00001 (OLD FORMAT - See migration for new format)
     date_part := TO_CHAR(NEW.transaction_date, 'YYYYMMDD');
     
     -- Get next sequence number for today
